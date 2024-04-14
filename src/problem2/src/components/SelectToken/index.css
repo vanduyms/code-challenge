@@ -1,0 +1,92 @@
+.selectToken {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #00000080;
+}
+
+.tokensContainer {
+  position: relative;
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: scroll;
+  max-height: 800px;
+}
+
+.tokensContainer > p {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 16px 0 16px 16px;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 12px;
+  top: 16px;
+  background-color: transparent;
+  border: none;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 36px;
+}
+
+.divider {
+  height: 1px;
+  border-top: 1px solid #ccc;
+}
+
+.tokens {
+  margin-left: 16px;
+}
+
+.tokenItem {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.tokenItem > img {
+  width: 24px;
+  height: 24px;
+}
+
+.tokenItem:hover {
+  background-color: #faf9fa;
+}
+
+.tokenItem:last-child {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .tokensContainer {
+    width: 100%;
+    max-height: 100%;
+  }
+}
